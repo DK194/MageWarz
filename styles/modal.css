@@ -1,0 +1,127 @@
+:root {
+  --modal-duration: 1s;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: #fff;
+  color: black;
+  width: 350px;
+  text-align: center;
+  margin: 10% auto;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-effective {
+  color: #12BD00;
+}
+
+.text-ineffective {
+  color: #E70000;
+}
+
+.text-costly-draw {
+  color: #fdc500;
+}
+
+.modal-score {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-icon {
+  color: #1C1652;
+}
+
+.modal-comp-choice {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 575.9px) {
+  .modal-content {
+    width: 250px;
+    padding: 1rem;
+  }
+
+  .modal-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .modal-score {
+    font-size: 1.5rem;
+  }
+
+  .modal-icon {
+    font-size: 5rem;
+  }
+
+  .modal-comp-choice {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .modal-content {
+    width: 300px;
+    padding: 1.5rem;
+  }
+
+  .modal-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .modal-score {
+    font-size: 1.6rem;
+  }
+
+  .modal-icon {
+    font-size: 6rem;
+  }
+
+  .modal-comp-choice {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .modal-content {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+  .modal-content {
+    padding: 2rem;
+  }
+}

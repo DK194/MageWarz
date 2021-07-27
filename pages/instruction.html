@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <script src='https://kit.fontawesome.com/9fea86ff8c.js'></script>
+  <link rel='icon' href='../images/icon.png'>
+  <link rel='stylesheet' href='../styles/instruction.css'>
+  <link rel='stylesheet' href='../styles/instruction-modal.css'>
+  <title>Mage Warz | How To Play</title>
+</head>
+<body>
+  <div class='instruction-container'>
+    <header class='instruction-header'>
+      <h1>How to play</h1>
+    </header>
+
+    <section class='instruction-content'>
+      <section class='instruction-about'>
+        <h2>About the game</h2>
+        <p>MageWarz can be simply described as a variation of a popular "rock-paper-scissors" game but on steroids. In this game however, you can choose among the six elemental powers: fire, water, thunder, ice, wind and earth. Each of these elements has two strengths and two weaknesses. In addition to that, every element can clash against one, special power which results in both sides taking damage.</p>
+      </section>
+      <section class='instruction-game-rules'>
+        <h2>Game rules</h2>
+        <p>Both you and the computer start off with 100 health points &#40;hp&#41;, and your goal is to reduce the computer's hp to zero. When that happens, the round ends and you're gaining a score which is equivalent to your remaining hp. Your game score is the sum of all rounds. When you lose the round against the computer, your score gets reduced to zero and you have to start over again. In case of draw you don’t lose your score, and you start the next round normally.</p>
+      </section>
+      <section class='instruction-battle-rules'>
+        <h2>Battle rules</h2>
+        <p>The element that’s strong against the other elemental power deals 40 hp damage to the opponent. When both you and the computer choose the same element, then the turn results in a draw and neither of the players is losing the remaining hp. However, when you and the computer player choose the special, elemental power that is neither weak or strong against each other, the turn results in a clash and you both lose 20 hp. The strengths and weaknesses of the elements are as follows:</p>
+      </section>
+    </section>
+
+    <div class='instruction-icons'>
+      <i id='fire' class='icon-info fas fa-fire-alt fa-4x'></i>
+      <i id='water' class='icon-info fas fa-water fa-4x'></i>
+      <i id='thunder' class='icon-info fas fa-bolt fa-4x'></i>
+      <i id='ice' class='icon-info far fa-snowflake fa-4x'></i>
+      <i id='wind' class='icon-info fas fa-wind fa-4x'></i>
+      <i id='earth' class='icon-info fas fa-mountain fa-4x'></i>
+    </div>
+
+    <p class='instruction-icons-info'>
+      Click on the element to learn more about it!
+    </p>
+
+    <a href='../index.html'>
+      <button id='instruction-btn' class='instruction-btn'>
+        Back to the game!
+      </button>
+    </a>
+  </div>
+
+  <div id='instruction-modal' class='instruction-modal'>
+    <div id='element-info' class='instruction-modal-content'></div>
+  </div>
+
+  <script src='../scripts/instruction.js'></script>
+</body>
+</html>

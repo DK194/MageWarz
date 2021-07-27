@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Akaya Telivigala', cursive;
+  line-height: 1.6;
+  color: #fff;
+  background: #0f0c29;
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);   
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+
+.instruction-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  text-align: center;
+  border: 2px solid #fdc500;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.instruction-header {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.instruction-header h1 {
+  color: #fdc500;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.instruction-content {
+  margin-bottom: 2rem;
+}
+
+.instruction-about h2,
+.instruction-game-rules h2,
+.instruction-battle-rules h2 {
+  color: #fdc500;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.instruction-about p,
+.instruction-game-rules p,
+.instruction-battle-rules p {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.instruction-icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  grid-gap: 2rem;
+  width: 530px;
+  margin: auto;
+}
+
+.icon-info {
+  cursor: pointer;
+}
+
+.instruction-icons-info {
+  color: #fdc500;
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+}
+
+.instruction-btn {
+  background: #0f0c29;
+  color: #fdc500;
+  font-size: 1rem;
+  margin: 1rem 0.4rem 1rem 0;
+  padding: 0.4rem 1.3rem;
+  border: 1px #0f0c29 solid;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.instruction-btn:hover {
+  background: #1D1942;
+  color: #FFEA26;
+}
+
+@media (max-width: 575.9px) {
+  .instruction-container {
+    min-width: 320px;
+    margin: 2rem 0.5rem 2rem 0.5rem;
+    padding: 0 1rem;
+  }
+
+  .instruction-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .instruction-about h2,
+  .instruction-game-rules h2,
+  .instruction-battle-rules h2 {
+    font-size: 1.4rem;
+  }
+
+  .instruction-about p,
+  .instruction-game-rules p,
+  .instruction-battle-rules p {
+    font-size: 1rem;
+  }
+
+  .instruction-icons {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    width: 260px;
+    font-size: 0.8rem;
+  }
+
+  .instruction-icons-info {
+    font-size: 0.9rem;
+  }
+
+  .instruction-btn {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem 1.2rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .instruction-container {
+    margin: 2rem 1rem 2rem 1rem;
+    padding: 0 1.5rem;
+    min-width: 450px;
+  }
+
+  .instruction-header h1 {
+    font-size: 2rem;
+  }
+
+  .instruction-about h2,
+  .instruction-game-rules h2,
+  .instruction-battle-rules h2 {
+    font-size: 1.5rem;
+  }
+
+  .instruction-about p,
+  .instruction-game-rules p,
+  .instruction-battle-rules p {
+    font-size: 1.1rem;
+  }
+
+  .instruction-icons {
+    grid-gap: 1.5rem;
+    width: 400px;
+    font-size: 0.9rem;
+  }
+
+  .instruction-icons-info {
+    font-size: 1rem;
+  }
+
+  .instruction-btn {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .instruction-icons {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+  .instruction-container {
+    min-width: 700px;
+    margin: 2rem 1.5rem 2rem 1.5rem;
+  }
+
+  .instruction-header h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 991.9px) and (max-width: 1163.9px) {
+  .instruction-container {
+    min-width: 900px;
+    margin: 2rem;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <script src='https://kit.fontawesome.com/9fea86ff8c.js'></script>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css'>
+  <link rel='icon' href='images/icon.png'>
+  <link rel='stylesheet' href='styles/style.css'>
+  <link rel='stylesheet' href='styles/modal.css'>
+  <title>Mage Warz</title>
+</head>
+<body>
+  <div class='game-container'>
+    <header class='game-header'>
+      <h1>MageWarz</h1>
+      <h2 id='highscore' class='highscore'>Score: 0</h2>
+      <div id='hp-fields' class='hp-fields'>
+        <div class='player-hp-field'>
+          <div class='player-hp-field-label'>
+            <p>Player:</p>
+          </div>
+          <div class='player-hp-field-content'>
+            <progress 
+              value='100' 
+              max='100'
+              id='player-hp-bar' 
+              class='progress is-danger player-hp-bar'
+            >
+            </progress>
+            <span id='player-health-points'>
+              100/100
+            </span>
+          </div>
+        </div>
+
+        <div class='computer-hp-field'>
+          <div class='computer-hp-field-label'>
+            <p>Computer:</p>
+          </div>
+          <div class='computer-hp-field-content'>
+            <progress 
+              value='100' 
+              max='100'
+              id='computer-hp-bar' 
+              class='progress is-danger computer-hp-bar'
+            >
+            </progress>
+            <span id='computer-health-points'>
+              100/100
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <button id='restart-btn' class='restart-btn'>
+      Restart the game
+    </button>
+
+    <a href='./pages/instruction.html'>
+      <button id='instruction-btn' class='instruction-btn'>
+        How to play
+      </button>
+    </a>
+
+    <h2 class='choices-text'>Choose your element!</h2>
+    <div class='choices'>
+      <div class='choice-wrapper fire-icon-wrapper'>
+        <i id='fire' class='player-choice fas fa-fire-alt fa-5x'></i>
+      </div>
+      <div class='choice-wrapper water-icon-wrapper'>
+        <i id='water' class='player-choice fas fa-water fa-5x'></i>
+      </div>
+      <div class='choice-wrapper thunder-icon-wrapper'>
+        <i id='thunder' class='player-choice fas fa-bolt fa-5x'></i>
+      </div>
+      <div class='choice-wrapper ice-icon-wrapper'>
+        <i id='ice' class='player-choice far fa-snowflake fa-5x'></i>
+      </div>
+      <div class='choice-wrapper wind-icon-wrapper'>
+        <i id='wind' class='player-choice fas fa-wind fa-5x'></i>
+      </div>
+      <div class='choice-wrapper earth-icon-wrapper'>
+        <i id='earth' class='player-choice fas fa-mountain fa-5x'></i>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal'>
+    <div id='result' class='modal-content'></div>
+  </div>
+
+  <script src='scripts/main.js'></script>
+</body>
+</html>

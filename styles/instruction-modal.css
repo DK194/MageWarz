@@ -1,0 +1,97 @@
+:root {
+  --modal-duration: 1s;
+}
+
+.instruction-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.instruction-modal-content {
+  background: #fff;
+  color: #0f0c29;
+  width: 350px;
+  text-align: center;
+  margin: 10% auto;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.instruction-modal-content p {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.icons-wrapper i {
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 575.9px) {
+  .instruction-modal-content {
+    width: 250px;
+    margin: 20% auto;
+    padding: 1rem;
+  }
+
+  .instruction-modal-content p {
+    font-size: 1.2rem;
+  }
+
+  .main-icon {
+    font-size: 3.5rem;
+  }
+
+  .icon-info {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .instruction-modal-content {
+    width: 300px;
+    padding: 1.5rem;
+  }
+
+  .instruction-modal-content p {
+    font-size: 1.3rem;
+  }
+
+  .main-icon {
+    font-size: 4rem;
+  }
+
+  .icon-info {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .instruction-modal-content {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+  .modal-content {
+    padding: 2rem;
+  }
+}
