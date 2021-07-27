@@ -1,0 +1,2 @@
+# MageWarz
+Mage Warz App.
