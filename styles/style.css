@@ -6,13 +6,16 @@
   box-sizing: border-box;
 }
 
+html, body {
+  background: #0f0c29;   
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+}
+
 body {
   font-family: 'Akaya Telivigala', cursive;
   line-height: 1.6;
   color: #fff;
-  background: #0f0c29;   
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
   overflow: hidden; 
 }
 
