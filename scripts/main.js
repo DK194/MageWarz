@@ -192,12 +192,16 @@ function generateModal(trnRes, c) {
   modalIcon = generateModalIcon(c);
 
   result.innerHTML = `
+    <i class='clearModalBtn fas fa-times' id='clearModalBtn'></i>
+    <div class='float-reset'></div>
     ${modalTurnResult}
     ${modalIcon}
     <p class='modal-comp-choice'>
       Computer Chose <strong>${c.charAt(0).toUpperCase() + c.slice(1)}</strong>
     </p>
-  `; 
+  `;
+  
+  createClearModalBtnEvent();
 }
 
 function generateModalResult(modRes) {
@@ -228,6 +232,15 @@ function generateModalIcon(compChoice) {
     case 'earth':
       return `<i class='modal-icon player-choice fas fa-mountain fa-7x'></i>`;
   }
+}
+
+function createClearModalBtnEvent() {
+  const clearModalBtn = document.getElementById('clearModalBtn');
+  clearModalBtn.addEventListener('click', clearModalOnClick);
+}
+
+function clearModalOnClick(e) {
+  modal.style.display = 'none';
 }
 
 function restartGame() {
@@ -283,6 +296,8 @@ function generateRoundModal(compChoice, mRndRes) {
   rndScore = initialGameData.playerScore;
 
   result.innerHTML = `
+    <i class='clearModalBtn fas fa-times' id='clearModalBtn'></i>
+    <div class='float-reset'></div>
     ${mRndRes}
     <p class='modal-score'>Your score: ${rndScore}</p>
     ${modalIcon}
@@ -290,6 +305,8 @@ function generateRoundModal(compChoice, mRndRes) {
       Computer Chose <strong>${compChoice.charAt(0).toUpperCase() + compChoice.slice(1)}</strong>
     </p>
   `;
+
+  createClearModalBtnEvent();
 }
 
 function nextRoundStart() {

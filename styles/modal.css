@@ -37,8 +37,18 @@
   }
 }
 
+.clearModalBtn {
+  color: #E70000;
+  float: right;
+}
+
+.float-reset {
+  clear: both;
+}
+
 .modal-content h1 {
   font-size: 1.6rem;
+  margin-top: 0.9rem;
   margin-bottom: 0.5rem;
 }
 

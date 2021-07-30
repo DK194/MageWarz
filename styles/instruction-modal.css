@@ -36,6 +36,15 @@
   }
 }
 
+.clearModalBtn {
+  color: #E70000;
+  float: right;
+}
+
+.float-reset {
+  clear: both;
+}
+
 .instruction-modal-content p {
   font-size: 1.4rem;
   margin-bottom: 0.4rem;

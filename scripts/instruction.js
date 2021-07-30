@@ -18,6 +18,8 @@ function generateIconInfo(pI) {
   let normalDmg = generateNormalDmg(pI);
 
   iconInfo.innerHTML = `
+    <i class='clearModalBtn fas fa-times' id='clearModalBtn'></i>
+    <div class='float-reset'></div>
     ${icon}
     <p>${pI.charAt(0).toUpperCase() + pI.slice(1)}</p>
     <p>Strong against:</p>
@@ -33,6 +35,8 @@ function generateIconInfo(pI) {
   `; 
   
   instructionModal.style.display = 'block';
+
+  createClearModalBtnEvent();
 }
 
 function generateIcon(playerIcon) {
@@ -149,6 +153,15 @@ function generateNormalDmg(iconNormalDmg) {
         <i id='ice' class='icon-info far fa-snowflake fa-3x'></i>
       `;
   }
+}
+
+function createClearModalBtnEvent() {
+  const clearModalBtn = document.getElementById('clearModalBtn');
+  clearModalBtn.addEventListener('click', clearModalOnClick);
+}
+
+function clearModalOnClick() {
+  instructionModal.style.display = 'none';
 }
 
 function clearModal(e) {
